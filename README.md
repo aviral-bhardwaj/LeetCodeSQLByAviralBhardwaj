@@ -21,6 +21,7 @@ SQL (Structured Query Language) is a powerful tool for managing and manipulating
 
 ## Repository Structure
 The repository is organized as follows:
+```
 LeetCodeSQLByAviralBhardwaj/
 │
 ├── Easy/
@@ -44,7 +45,7 @@ LeetCodeSQLByAviralBhardwaj/
 │
 ├── README.md
 └── LICENSE
-
+```
 Code
 - **Easy/**, **Medium/**, and **Hard/** directories contain SQL solutions categorized by difficulty level.
 - **Scripts/** directory includes helpful SQL scripts for setting up test databases and running test queries.
