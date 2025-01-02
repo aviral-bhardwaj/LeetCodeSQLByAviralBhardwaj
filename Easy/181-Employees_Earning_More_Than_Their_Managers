@@ -1,0 +1,74 @@
+iidfnksdfgdsinbdjfdsfbjk	sdfkdsnfjkldsnfjkdsnfjkdsnfnvffvndfjkvkncvkldfngvjkdfnvdfklm	qkladndjkvnjkbndfklfjmqwk#In this code we will solve 
+181. Employees Earning More Than Their Managers this question and it is easy question
+for this we have employee table and it contains struture like
+Table: Employee
+
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
+| salary      | int     |
+| managerId   | int     |
++-------------+---------+
+id is the primary key (column with unique values) for this table.
+Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.
+ 
+
+Write a solution to find the employees who earn more than their managers.
+
+Return the result table in any order.
+
+The result format is in the following example.
+
+ 
+
+Example 1:
+
+Input: 
+Employee table:
++----+-------+--------+-----------+
+| id | name  | salary | managerId |
++----+-------+--------+-----------+
+| 1  | Joe   | 70000  | 3         |
+| 2  | Henry | 80000  | 4         |
+| 3  | Sam   | 60000  | Null      |
+| 4  | Max   | 90000  | Null      |
++----+-------+--------+-----------+
+Output: 
++----------+
+| Employee |
++----------+
+| Joe      |
++----------+
+
+
+Now Solution for this is 
+
+we will write code like that we will able to see above result
+for that we will write code like
+```
+SELECT a.name AS Employee
+FROM Employee a
+JOIN Employee b ON a.managerId = b.Id
+WHERE a.salary > b.salary
+```
+This SQL query is designed to find employees who earn more than their managers. Let's break it down:
+sql
+```
+SELECT a.name AS Employee
+FROM Employee a
+JOIN Employee b ON a.managerId = b.Id
+WHERE a.salary > b.salary
+```
+
+Here's what the query does:
+
+Self-Join: The query performs a self-join on the Employee table. This means it's joining the table with itself, creating two instances of the same table (aliased as 'a' and 'b').
+
+Join Condition: The join is based on the condition a.managerId = b.Id. This links each employee (from instance 'a') with their manager (from instance 'b').
+
+Salary Comparison: The WHERE clause a.salary > b.salary filters the results to only include cases where an employee's salary is greater than their manager's salary.
+
+Result: The query selects the name of the employee (from instance 'a') and aliases it as "Employee" in the output.
+This query is particularly useful for identifying potential salary inconsistencies or anomalies within an organization's hierarchy. It can help HR departments or management to review cases where subordinates are earning more than their superiors, which might warrant further investigation or adjustment.
