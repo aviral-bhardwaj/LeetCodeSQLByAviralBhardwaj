@@ -16,7 +16,7 @@ For example, your query should return the following for the above table:
 +---------+
 | a@b.com |
 +---------+
-Note: All emails are in lowercase.
+Note: All emails are in lowercase. 
 **/
 
 # Runtime: 204 ms, faster than 35.61% of MySQL online submissions for Duplicate Emails.
