@@ -1,7 +1,6 @@
 /*196-Delete_Duplicate_Emails
 
 Table: Person
-
 +-------------+---------+
 | Column Name | Type    |
 +-------------+---------+
