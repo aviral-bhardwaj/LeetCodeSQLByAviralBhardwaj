@@ -19,6 +19,7 @@ After running your script, the answer shown is the Person table. The driver will
 
 The result format is in the following example.
 
+
 Example 1:
 Input: 
 Person table:
