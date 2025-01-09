@@ -42,9 +42,9 @@ Explanation: john@example.com is repeated two times. We keep the row with the sm
 
 */
 
-DELETE FROM Person
-WHERE id NOT IN (
-    SELECT MIN(id)
-    FROM Person
-    GROUP BY email
-);
+DELETE p1
+FROM person p1
+JOIN person p2
+ON p1.email = p2.email
+WHERE p1.id > p2.id;
+
