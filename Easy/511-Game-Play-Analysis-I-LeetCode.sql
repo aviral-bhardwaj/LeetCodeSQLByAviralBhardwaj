@@ -1,7 +1,6 @@
 /*
 511-Game-Play-Analysis-I-LeetCode.sql
 
-
 Table: Activity
 
 +--------------+---------+
