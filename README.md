@@ -17,7 +17,7 @@ Welcome to the LeetCode SQL Solutions repository! This comprehensive collection 
 - [License](#license)
 
 ## Introduction
-SQL (Structured Query Language) is a powerful tool for managing and manipulating relational databases. It's an essential skill for data analysts, software engineers, and anyone working with data-driven applications. This repository provides a variety of SQL solutions to help you master SQL.
+SQL (Structured Query Language) is a powerful tool for managing and manipulating relational databases. It's an essential skill for data analysts, software engineers, and anyone working with data-driven applications. This repository provides a variety of SQL solutions to help you master SQL. 
 
 ## Repository Structure
 The repository is organized as follows:
