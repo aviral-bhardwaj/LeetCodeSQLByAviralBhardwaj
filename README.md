@@ -61,6 +61,7 @@ To get started with this repository, follow these steps:
 3. Set up your database environment using the scripts provided in the **Scripts/** directory.
 4. Start exploring the solutions in the difficulty-level directories.
 
+
 ## How to Use This Repository
 1. **Browse by Difficulty**: Navigate through the **Easy/**, **Medium/**, and **Hard/** directories to find problems that match your skill level or learning goals.
 2. **Read the Problem Statement**: Each SQL file begins with a comment section containing the original LeetCode problem statement and any relevant context.
