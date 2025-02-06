@@ -47,6 +47,7 @@ LeetCodeSQLByAviralBhardwaj/
 ├── README.md
 └── LICENSE
 ```
+
 Code
 - **Easy/**, **Medium/**, and **Hard/** directories contain SQL solutions categorized by difficulty level.
 - **Scripts/** directory includes helpful SQL scripts for setting up test databases and running test queries.
