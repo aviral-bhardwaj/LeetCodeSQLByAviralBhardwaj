@@ -2,6 +2,7 @@
 
 Welcome to the LeetCode SQL Solutions repository! This comprehensive collection contains solutions to SQL problems from LeetCode, carefully curated and implemented by Aviral Bhardwaj. Whether you're a beginner or an experienced SQL user, this repository will help you improve your SQL skills.
 
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Repository Structure](#repository-structure)
