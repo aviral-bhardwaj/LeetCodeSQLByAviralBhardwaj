@@ -1,9 +1,0 @@
-CREATE TABLE transaction  (
-    order_id INTEGER,
-    order_date DATE,
-    customer_name VARCHAR(30),
-    product_name VARCHAR(20),
-    price DECIMAL(15,2),
-    payment_method VARCHAR(20)
-);
-
