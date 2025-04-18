@@ -1,0 +1,126 @@
+ Here are 100 SQL practice questions based on your table structure. 
+The questions are divided into three levels:
+**Easy (40)**, 
+**Medium (40)**, and
+**Hard (20)**. 
+
+They cover the topics you mentioned: `SELECT`, `WHERE`, aggregation, filtering, `ORDER BY`, `GROUP BY`, and `HAVING`. The questions are designed to help you progressively build your SQL skills.
+
+---
+
+## Easy (1-40)
+
+1. Select all columns from the table.
+2. Select only the `Order_ID` and `Customer_Name` columns.
+3. Retrieve all unique `State` values.
+4. Show all orders placed in the year 2020.
+5. List all customers from the city "Los Angeles".
+6. Find all orders shipped via "Second Class".
+7. Select all orders where `Quantity` is greater than 5.
+8. Display the first 10 rows of the table.
+9. List all orders where `Profit` is negative.
+10. Show all orders where `Discount` is 0.
+11. Find all orders from the "West" region.
+12. Retrieve all orders from "California" state.
+13. Select all orders where `Sales` is greater than 500.
+14. List all orders placed by "Claire Gute".
+15. Show all orders with `Ship_Mode` as "Standard Class".
+16. Find all orders shipped after "2020-01-01".
+17. Display all orders with `Category` as "Furniture".
+18. List all orders where `Sub_Category` is "Chairs".
+19. Show all orders where `Postal_Code` starts with "9".
+20. Find all orders where `Order_Date` is before "2019-01-01".
+21. Select all orders where `Country_Region` is "United States".
+22. List all customers who belong to the "Consumer" segment.
+23. Show all orders where `Sales` is between 100 and 200.
+24. Display all orders where `Product_Name` contains the word "Table".
+25. List all orders where `Quantity` is less than 3.
+26. Find all orders shipped to "Texas".
+27. Select all orders where `Order_ID` starts with "CA".
+28. Show all orders where `Profit` is greater than 100.
+29. List all orders where `Ship_Date` is the same as `Order_Date`.
+30. Display all orders where `Discount` is not 0.
+31. Find all orders where `Category` is not "Technology".
+32. Select all orders where `Region` is "South".
+33. List all orders where `Customer_Name` starts with "A".
+34. Show all orders where `Product_ID` ends with "25".
+35. Find all orders where `Order_Date` is in June.
+36. Display all orders with `Sales` less than 50.
+37. List all orders where `State` is "Florida".
+38. Show all orders where `Order_ID` contains "2018".
+39. Find all orders where `Profit` is less than 0.
+40. Select all orders where `Ship_Mode` is not "First Class".
+
+---
+
+## Medium (41-80)
+
+41. Count the total number of orders.
+42. Find the total sales for each `State`.
+43. Calculate the average `Profit` for each `Category`.
+44. List the top 5 customers with the highest total sales.
+45. Find the total quantity sold for each `Product_ID`.
+46. Show the number of orders for each `Ship_Mode`.
+47. Calculate the total profit for each `Region`.
+48. List the total sales for each month in 2020.
+49. Find the average discount given for each `Sub_Category`.
+50. Show the total number of orders for each `Segment`.
+51. List the top 3 states with the highest sales.
+52. Find the customer with the highest total profit.
+53. Show the average sales per order for each `Category`.
+54. List all products that have been sold more than 10 times.
+55. Find the total sales for each `City` in "California".
+56. Show the number of unique customers in each `Region`.
+57. List the total profit for each `Ship_Mode`.
+58. Find the average quantity per order for each `Sub_Category`.
+59. Show the total sales for each year.
+60. List the top 5 products by sales.
+61. Find the state with the lowest total profit.
+62. Show the average discount per customer.
+63. List the total quantity sold for each `Category`.
+64. Find the month with the highest sales in 2020.
+65. Show the number of orders for each `Product_ID`.
+66. List the total profit for each `Customer_ID`.
+67. Find the top 3 cities by total sales.
+68. Show the average sales for each `Ship_Mode`.
+69. List the total sales for each `Region` and `Category`.
+70. Find the customer with the most orders.
+71. Show the number of orders placed in each year.
+72. List the average profit per order for each `State`.
+73. Find the top 5 customers by total quantity purchased.
+74. Show the total sales and profit for each `Category`.
+75. List the number of orders for each `Sub_Category`.
+76. Find the average quantity per order for each `Segment`.
+77. Show the total sales for each `Product_Name`.
+78. List the top 3 products by total quantity sold.
+79. Find the state with the highest average sales per order.
+80. Show the average discount for each `Region`.
+
+---
+
+## Hard (81-100)
+
+81. List the top 5 customers in each region by total sales.
+82. Find the product with the highest profit margin (Profit/Sales).
+83. Show the month-on-month sales growth for 2020.
+84. List the top 3 categories by average profit per order.
+85. Find all customers who have placed more than 5 orders.
+86. Show the top 5 cities by total profit in each state.
+87. List all products that have never been sold with a discount.
+88. Find the average sales per customer for each segment.
+89. Show the percentage of total sales contributed by each category.
+90. List the customers who have purchased from more than one segment.
+91. Find the top 3 states with the highest average discount.
+92. Show the total profit for each product in each region.
+93. List the top 5 products by sales in each year.
+94. Find all orders where the sales amount is above the average sales for that year.
+95. Show the average profit per order for each ship mode and category.
+96. List all customers who have only placed orders in 2019.
+97. Find the product with the highest total quantity sold in each category.
+98. Show the total sales and profit for each customer in each year.
+99. List the top 3 sub-categories by total profit in each region.
+100. Find all orders where the profit is less than the average profit for that sub-category.
+
+---
+
+**Happy practicing!** 
