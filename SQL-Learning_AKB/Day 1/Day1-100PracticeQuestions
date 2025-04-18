@@ -124,3 +124,49 @@ They cover the topics you mentioned: `SELECT`, `WHERE`, aggregation, filtering, 
 ---
 
 **Happy practicing!** 
+
+
+
+Here are 20 additional hard SQL practice questions, designed to challenge your advanced skills using the provided table structure. These questions focus on advanced querying, aggregation, filtering, grouping, and ordering, as well as scenarios that require creative or multi-step solutions.
+
+---
+
+## 20 More Hard SQL Questions
+
+1. Find the top 3 customers in each segment by total profit, and display their names, segment, and profit.
+2. For each year, list the product category with the highest average discount.
+3. Identify all orders where the shipping time (difference between Ship_Date and Order_Date) is greater than the average shipping time for that year.
+4. List all customers who have placed orders in every year present in the data.
+5. For each state, find the product sub-category with the lowest total sales.
+6. Show the running total of sales for each region, ordered by Order_Date.
+7. For each customer, display the largest single order (by sales amount) they have placed.
+8. Find the average profit per order for each combination of Ship_Mode and Segment, but only include combinations with at least 10 orders.
+9. Identify all products that have never been sold with a discount greater than 0.2.
+10. For each city, find the month with the highest total sales and display the city, month, and sales.
+11. List all orders where the sales amount is more than twice the average sales for that product’s sub-category.
+12. For each region, show the percentage of orders that had a negative profit.
+13. List customers who have ordered from more than three different product categories.
+14. For each year, find the state with the highest total quantity sold.
+15. Show the top 5 orders (by sales) in each category for the most recent year in the data.
+16. For each customer, calculate the time difference (in days) between their first and last order.
+17. List all orders where the profit is the lowest for that product in the entire dataset.
+18. For each segment, show the product with the highest average sales per order.
+19. Identify all orders where the customer’s total profit across all orders is negative.
+20. For each region and year, find the average shipping time and list the three cities with the slowest average shipping times.
+
+---
+
+These questions will push your ability to use subqueries, window functions, complex aggregations, and advanced filtering. Good luck with your practice!
+
+Citations:
+[1] https://www.codechef.com/learn/course/sql-intermediate
+[2] https://datalemur.com/blog/advanced-sql-interview-questions
+[3] https://www.reddit.com/r/SQL/comments/s3kcjf/looking_for_advanced_sql_exercises_to_brush_up/
+[4] https://upesonline.ac.in/blog/advanced-sql-interview-questions
+[5] https://www.geeksforgeeks.org/sql-exercises/
+[6] https://365datascience.com/resources-center/practice-exams/advanced-sql/
+[7] https://learnsql.com/blog/advanced-sql-practice/
+[8] https://www.kaggle.com/learn/advanced-sql
+[9] https://leetcode.com/studyplan/premium-sql-50/
+
+---
