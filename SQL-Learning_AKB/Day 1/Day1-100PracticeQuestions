@@ -60,10 +60,16 @@ select * from orders where state='California';
 
 13. Select all orders where `Sales` is greater than 500.
 
-
+select * from Orders where `Sales`>500
 
 14. List all orders placed by "Claire Gute".
+
+select * from Orders where Customer_Name='Claire Gute'
+
 15. Show all orders with `Ship_Mode` as "Standard Class".
+
+select * from Orders where Ship_Mode="Standard Class"
+
 16. Find all orders shipped after "2020-01-01".
 17. Display all orders with `Category` as "Furniture".
 18. List all orders where `Sub_Category` is "Chairs".
