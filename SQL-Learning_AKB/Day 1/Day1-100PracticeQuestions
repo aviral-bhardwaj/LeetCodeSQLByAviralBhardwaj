@@ -11,10 +11,24 @@ They cover the topics you mentioned: `SELECT`, `WHERE`, aggregation, filtering, 
 ## Easy (1-40)
 
 1. Select all columns from the table.
+
+select * from orders;
+
 2. Select only the `Order_ID` and `Customer_Name` columns.
+
+select `Order_ID` , `Customer_Name` from orders;
+
 3. Retrieve all unique `State` values.
+
+select distinct state from orders;
+
 4. Show all orders placed in the year 2020.
+
+select * from orders where Order_Date like '2020%';
+
 5. List all customers from the city "Los Angeles".
+
+
 6. Find all orders shipped via "Second Class".
 7. Select all orders where `Quantity` is greater than 5.
 8. Display the first 10 rows of the table.
