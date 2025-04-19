@@ -42,9 +42,13 @@ select * from orders where Quantity>=5
 
 select * from orders limit 10;
 
-
 9. List all orders where `Profit` is negative.
+
+select * from orders where profit like '-%'
+
 10. Show all orders where `Discount` is 0.
+
+
 11. Find all orders from the "West" region.
 12. Retrieve all orders from "California" state.
 13. Select all orders where `Sales` is greater than 500.
