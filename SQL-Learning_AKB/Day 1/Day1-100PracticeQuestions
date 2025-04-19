@@ -48,10 +48,20 @@ select * from orders where profit like '-%'
 
 10. Show all orders where `Discount` is 0.
 
+select * from orders where Discount=0
 
 11. Find all orders from the "West" region.
+
+select Region , count(*) as count_of_region from orders group by region
+
 12. Retrieve all orders from "California" state.
+
+select * from orders where state='California';
+
 13. Select all orders where `Sales` is greater than 500.
+
+
+
 14. List all orders placed by "Claire Gute".
 15. Show all orders with `Ship_Mode` as "Standard Class".
 16. Find all orders shipped after "2020-01-01".
