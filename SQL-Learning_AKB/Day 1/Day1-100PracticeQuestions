@@ -186,12 +186,25 @@ select count(*) from Orders
 
 select sum(Sales) as total_sale,state from orders group by State order by total_sale ,state
 
+107.9400	Kansas
+205.0300	Vermont
+361.3800	Nebraska
+547.3300	Maine
+728.3000	Iowa
+
 43. Calculate the average `Profit` for each `Category`.
 
-
+select avg(profit) as Average_Profit, Category from orders group by Category
+or
+select avg(profit) as Average_Profit, Category from orders group by Category order by Category,Average_Profit
 
 44. List the top 5 customers with the highest total sales.
+
+select sum(sales) as total_sales,customer_name from orders group by customer_name order by total_sales desc limit 5
+
 45. Find the total quantity sold for each `Product_ID`.
+
+
 46. Show the number of orders for each `Ship_Mode`.
 47. Calculate the total profit for each `Region`.
 48. List the total sales for each month in 2020.
