@@ -273,11 +273,35 @@ GROUP BY Sub_Category;
 
 
 59. Show the total sales for each year.
+
+SELECT SUM(sales) AS yearly_Sales, YEAR(Order_date) AS year_of_order
+FROM orders
+GROUP BY year_of_order;
+
+
 60. List the top 5 products by sales.
+
+select Product_Name, sum(Sales) as total_sales from orders group by Product_Name order by total_sales desc limit 5
+
 61. Find the state with the lowest total profit.
+
+select sum(profit) as total_profit , state from orders group by state order by total_profit asc limit 1
+
 62. Show the average discount per customer.
+
+select avg(discount) as average_discount ,Customer_Name from orders group by Customer_Name 
+
 63. List the total quantity sold for each `Category`.
+
+SELECT SUM(Quantity) AS total_Quantity, Category
+FROM orders
+GROUP BY Category
+ORDER BY total_Quantity;
+
+
 64. Find the month with the highest sales in 2020.
+
+
 65. Show the number of orders for each `Product_ID`.
 66. List the total profit for each `Customer_ID`.
 67. Find the top 3 cities by total sales.
