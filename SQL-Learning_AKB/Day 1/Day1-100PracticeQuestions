@@ -110,12 +110,34 @@ select * from Orders where `Sales` between 100 and 200
 select * from Orders where `Product_Name` like "%Table%"
 
 25. List all orders where `Quantity` is less than 3.
+
+select * from Orders where `Quantity` < 3
+
+
 26. Find all orders shipped to "Texas".
+
+select * from Orders where State = "Texas"
+
 27. Select all orders where `Order_ID` starts with "CA".
+
+select * from Orders where `Order_ID` like "CA%"
+
 28. Show all orders where `Profit` is greater than 100.
+
+select * from Orders where `Profit` > 100
+
 29. List all orders where `Ship_Date` is the same as `Order_Date`.
+
+select * from Orders where `Ship_Date`= `Order_Date`
+
 30. Display all orders where `Discount` is not 0.
+
+select * from Orders where `Discount` != 0
+
 31. Find all orders where `Category` is not "Technology".
+
+select * from Orders where `Category` != "Technology"
+
 32. Select all orders where `Region` is "South".
 33. List all orders where `Customer_Name` starts with "A".
 34. Show all orders where `Product_ID` ends with "25".
