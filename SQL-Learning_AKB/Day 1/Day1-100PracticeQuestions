@@ -301,6 +301,20 @@ ORDER BY total_Quantity;
 
 64. Find the month with the highest sales in 2020.
 
+SELECT MONTH(Order_Date) AS month_of_order, SUM(Sales) AS total_sales
+FROM Orders
+WHERE YEAR(Order_Date) = 2020
+GROUP BY month_of_order
+ORDER BY total_sales DESC
+LIMIT 1;
+
+or 
+
+SELECT MONTH(Order_Date) AS month_of_order, SUM(Sales) AS total_sales
+FROM Orders
+WHERE YEAR(Order_Date) = 2020
+GROUP BY month_of_order
+ORDER BY total_sales DESC
 
 65. Show the number of orders for each `Product_ID`.
 66. List the total profit for each `Customer_ID`.
