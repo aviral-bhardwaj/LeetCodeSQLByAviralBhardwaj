@@ -317,17 +317,107 @@ GROUP BY month_of_order
 ORDER BY total_sales DESC
 
 65. Show the number of orders for each `Product_ID`.
+
+SELECT COUNT(Order_ID) AS Number_Of_Orders, Product_ID
+FROM orders
+GROUP BY Product_ID;
+
+
 66. List the total profit for each `Customer_ID`.
+
+SELECT SUM(profit) AS Sum_Of_Profit, Customer_ID
+FROM orders
+GROUP BY Customer_ID
+ORDER BY Sum_Of_Profit;
+
+
 67. Find the top 3 cities by total sales.
+
+SELECT City, SUM(Sales) AS Total_Sales
+FROM orders
+GROUP BY City
+ORDER BY Total_Sales DESC
+LIMIT 3;
+
+
 68. Show the average sales for each `Ship_Mode`.
+
+select avg(sales) as average_sales ,Ship_Mode from orders group by Ship_Mode
+
 69. List the total sales for each `Region` and `Category`.
+
+SELECT SUM(sales) AS Total_Sales, Region, Category
+FROM orders
+GROUP BY Region, Category
+ORDER BY Total_Sales;
+
+
 70. Find the customer with the most orders.
+
+SELECT customer_name, COUNT(order_id) AS numb_order
+FROM orders
+GROUP BY customer_name
+ORDER BY numb_order DESC
+LIMIT 5;
+
+
 71. Show the number of orders placed in each year.
+
+SELECT COUNT(order_id) AS count_of_orders, YEAR(Order_Date) AS Order_Year
+FROM orders
+GROUP BY Order_Year
+ORDER BY Order_Year;
+
+
 72. List the average profit per order for each `State`.
+
+SELECT State, AVG(order_profit) AS avg_profit_per_order
+FROM (
+    SELECT State, Order_id, SUM(profit) AS order_profit
+    FROM orders
+    GROUP BY State, Order_id
+) AS per_order
+GROUP BY State;
+
 73. Find the top 5 customers by total quantity purchased.
+
+SELECT SUM(Quantity) AS sum_qty, Customer_Name
+FROM orders
+GROUP BY Customer_Name
+ORDER BY sum_qty DESC
+LIMIT 5;
+
+
 74. Show the total sales and profit for each `Category`.
+
+SELECT 
+    SUM(sales) AS SumOfSales, 
+    SUM(profit) AS SumOfProfit, 
+    Category 
+FROM orders 
+GROUP BY Category;
+
+
 75. List the number of orders for each `Sub_Category`.
+
+SELECT COUNT(DISTINCT order_id) AS total_orders, Sub_Category
+FROM orders
+GROUP BY Sub_Category;
+
+Or
+
+SELECT COUNT(order_id) AS total_orders, Sub_Category
+FROM orders
+GROUP BY Sub_Category;
+
+
+
 76. Find the average quantity per order for each `Segment`.
+
+
+
+
+
 77. Show the total sales for each `Product_Name`.
 78. List the top 3 products by total quantity sold.
 79. Find the state with the highest average sales per order.
