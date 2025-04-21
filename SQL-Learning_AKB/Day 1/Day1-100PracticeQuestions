@@ -139,14 +139,40 @@ select * from Orders where `Discount` != 0
 select * from Orders where `Category` != "Technology"
 
 32. Select all orders where `Region` is "South".
+
+select * from Orders where `Region` = "South"
+
 33. List all orders where `Customer_Name` starts with "A".
+
+select * from Orders where `Customer_Name` like "A%"
+
 34. Show all orders where `Product_ID` ends with "25".
+
+select * from Orders where `Product_ID` like "%25"
+
 35. Find all orders where `Order_Date` is in June.
+
+select * from Orders where `Order_Date` like '_____06%'
+
 36. Display all orders with `Sales` less than 50.
+
+select * from Orders where `Sales` < 50
+
 37. List all orders where `State` is "Florida".
+
+select * from Orders where `State` = "Florida"
+
 38. Show all orders where `Order_ID` contains "2018".
+
+select * from Orders where `Order_ID` like "%2018%"
+
 39. Find all orders where `Profit` is less than 0.
+
+select * from Orders where `Profit` < 0
+
 40. Select all orders where `Ship_Mode` is not "First Class".
+
+select * from Orders where `Ship_Mode` != "First Class"
 
 ---
 
