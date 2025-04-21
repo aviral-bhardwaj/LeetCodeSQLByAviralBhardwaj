@@ -76,8 +76,17 @@ select * from Orders where Ship_Date>"2020-01-01" order by Ship_Date
 
 
 17. Display all orders with `Category` as "Furniture".
+
+select * from Orders where `Category` = "Furniture"
+
 18. List all orders where `Sub_Category` is "Chairs".
+
+select * from Orders where `Sub_Category`= "Chairs"
+
+
 19. Show all orders where `Postal_Code` starts with "9".
+
+
 20. Find all orders where `Order_Date` is before "2019-01-01".
 21. Select all orders where `Country_Region` is "United States".
 22. List all customers who belong to the "Consumer" segment.
