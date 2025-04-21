@@ -415,13 +415,52 @@ GROUP BY Sub_Category;
 76. Find the average quantity per order for each `Segment`.
 
 
-
+SELECT Segment, AVG(total_quantity) AS avg_quantity_per_order
+FROM (
+    SELECT Segment, Order_id, SUM(quantity) AS total_quantity
+    FROM orders
+    GROUP BY Segment, Order_id
+) AS per_order
+GROUP BY Segment;
 
 
 77. Show the total sales for each `Product_Name`.
+
+SELECT SUM(sales) AS sumofsales, Product_Name
+FROM orders
+GROUP BY Product_Name;
+
+
 78. List the top 3 products by total quantity sold.
+
+SELECT SUM(quantity) AS SumOfQty, Product_Name
+FROM orders
+GROUP BY Product_Name
+ORDER BY SumOfQty DESC
+LIMIT 3;
+
+
 79. Find the state with the highest average sales per order.
+
+
+SELECT State, AVG(order_sales) AS average_sale
+FROM (
+    SELECT State, Order_id, SUM(sales) AS order_sales
+    FROM orders
+    GROUP BY State, Order_id
+) AS per_order
+GROUP BY State
+ORDER BY average_sale DESC
+LIMIT 1;
+
+
 80. Show the average discount for each `Region`.
+
+SELECT AVG(discount) AS avg_discount, Region
+FROM Orders
+GROUP BY Region
+ORDER BY avg_discount;
+
 
 ---
 
