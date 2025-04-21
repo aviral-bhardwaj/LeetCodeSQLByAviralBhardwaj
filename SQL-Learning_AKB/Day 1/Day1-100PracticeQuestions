@@ -75,7 +75,7 @@ select * from Orders where Ship_Mode="Standard Class"
 select * from Orders where Ship_Date>"2020-01-01" order by Ship_Date
 
 
-17. Display all orders with `Category` as "Furniture".
+17. Display all orders with `Category` as "Furniture". 
 
 select * from Orders where `Category` = "Furniture"
 
