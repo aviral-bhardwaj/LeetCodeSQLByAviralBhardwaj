@@ -218,16 +218,60 @@ select sum(Profit) as total_profit, Region from Orders group by Region order by 
 
 select sum(sales) as total_sales , month(Order_Date) as Monthly_data from orders group by Monthly_data order by Monthly_data
 
+select sum(sales) as total_sales , month(Order_Date) as Monthly_data from orders
+where Order_Date like '%2020%'
+group by Monthly_data order by Monthly_data
+
 49. Find the average discount given for each `Sub_Category`.
+
+select avg(discount) as average_discount, Sub_Category from orders group by Sub_Category order by average_discount ,Sub_Category
+
+
 50. Show the total number of orders for each `Segment`.
+
+select count(Order_ID) as total_number_of_order , Segment from orders group by Segment order by total_number_of_order
+
 51. List the top 3 states with the highest sales.
+
+select sum(sales) as highest_sale , state from orders group by state order by highest_sale desc limit 5
+
 52. Find the customer with the highest total profit.
+
+select sum(profit) as Total_Profit , Customer_Name from orders group by Customer_Name order by Total_Profit desc limit 5
+
 53. Show the average sales per order for each `Category`.
+
+select avg(sales) as average_sales, Category from orders group by Category order by average_sales
+
 54. List all products that have been sold more than 10 times.
+
+SELECT Product_Name, SUM(Quantity) AS Total_Quantity_Sold
+FROM orders
+GROUP BY Product_Name
+HAVING SUM(Quantity) > 10
+ORDER BY Total_Quantity_Sold DESC;
+
+
 55. Find the total sales for each `City` in "California".
+
+select sum(sales) as total_sales , city from orders where state ="California" group by city order by total_sales
+
+
 56. Show the number of unique customers in each `Region`.
+
+select count(distinct Customer_name) as unique_customers, Region from orders group by Region 
+
 57. List the total profit for each `Ship_Mode`.
+
+select sum(profit) as total_profit, Ship_Mode from orders group by Ship_Mode order by Ship_Mode
+
 58. Find the average quantity per order for each `Sub_Category`.
+
+SELECT AVG(quantity) AS average_quantity, Sub_Category
+FROM orders
+GROUP BY Sub_Category;
+
+
 59. Show the total sales for each year.
 60. List the top 5 products by sales.
 61. Find the state with the lowest total profit.
