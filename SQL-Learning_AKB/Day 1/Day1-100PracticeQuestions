@@ -179,8 +179,17 @@ select * from Orders where `Ship_Mode` != "First Class"
 ## Medium (41-80)
 
 41. Count the total number of orders.
+
+select count(*) from Orders 
+
 42. Find the total sales for each `State`.
+
+select sum(Sales) as total_sale,state from orders group by State order by total_sale ,state
+
 43. Calculate the average `Profit` for each `Category`.
+
+
+
 44. List the top 5 customers with the highest total sales.
 45. Find the total quantity sold for each `Product_ID`.
 46. Show the number of orders for each `Ship_Mode`.
