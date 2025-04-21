@@ -204,9 +204,16 @@ select sum(sales) as total_sales,customer_name from orders group by customer_nam
 
 45. Find the total quantity sold for each `Product_ID`.
 
+select sum(Quantity) as total_quantity_sold, Product_ID from orders group by Product_ID order by total_quantity_sold
 
 46. Show the number of orders for each `Ship_Mode`.
+
+select count(Order_ID) as Total_Order ,Ship_Mode from Orders group by Ship_Mode order by Total_Order
+
 47. Calculate the total profit for each `Region`.
+
+select sum(Profit) as total_profit, Region from Orders group by Region order by total_profit
+
 48. List the total sales for each month in 2020.
 49. Find the average discount given for each `Sub_Category`.
 50. Show the total number of orders for each `Segment`.
