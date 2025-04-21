@@ -101,7 +101,14 @@ select * from Orders where `Country_Region` = "United States"
 select * from Orders where Segment ="Consumer" 
 
 23. Show all orders where `Sales` is between 100 and 200.
+
+select * from Orders where `Sales` between 100 and 200
+
+
 24. Display all orders where `Product_Name` contains the word "Table".
+
+select * from Orders where `Product_Name` like "%Table%"
+
 25. List all orders where `Quantity` is less than 3.
 26. Find all orders shipped to "Texas".
 27. Select all orders where `Order_ID` starts with "CA".
