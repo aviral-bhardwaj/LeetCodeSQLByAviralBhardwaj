@@ -467,6 +467,7 @@ ORDER BY avg_discount;
 ## Hard (81-100)
 
 
+
 81. List the top 5 customers in each region by total sales.
 82. Find the product with the highest profit margin (Profit/Sales).
 83. Show the month-on-month sales growth for 2020.
