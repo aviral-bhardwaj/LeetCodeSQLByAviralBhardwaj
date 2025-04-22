@@ -466,10 +466,58 @@ ORDER BY avg_discount;
 
 ## Hard (81-100)
 
-
-
 81. List the top 5 customers in each region by total sales.
+
+WITH df1 AS (
+    SELECT 
+        region,
+        Customer_Name,
+        SUM(sales) AS total_sales
+    FROM orders
+    GROUP BY 
+        region, 
+        Customer_Name
+),
+
+df2 AS (
+    SELECT 
+        region,
+        Customer_Name,
+        total_sales,
+        ROW_NUMBER() OVER (
+            PARTITION BY region 
+            ORDER BY total_sales DESC
+        ) AS rownumber
+    FROM df1
+)
+
+SELECT 
+    region,
+    Customer_Name,
+    total_sales
+FROM df2
+WHERE rownumber <= 5;
+
+or 
+
+with df1 as (
+select region,Customer_Name, sum(sales) as total_sales from orders group by region,Customer_Name ) ,
+
+ df2 as (
+select 
+region,Customer_Name,total_sales,
+row_number() over( PARTITION BY region order by total_sales desc  ) as rownumber
+from df1)
+
+ select * from df2 where rownumber<=5
+
 82. Find the product with the highest profit margin (Profit/Sales).
+
+with df1 as (
+select Product_Name ,max(profit) as maxedprofit from orders group by Product_Name) 
+select * from df1
+where maxedprofit >0 order by maxedprofit desc
+
 83. Show the month-on-month sales growth for 2020.
 84. List the top 3 categories by average profit per order.
 85. Find all customers who have placed more than 5 orders.
