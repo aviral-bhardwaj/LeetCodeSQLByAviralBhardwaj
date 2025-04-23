@@ -1,0 +1,154 @@
+Here are 100 SQL questions strictly focused on **SELECT**, **WHERE**, **GROUP BY**, **ORDER BY**,
+**aggregation functions** (COUNT, SUM, AVG, MIN, MAX), and **JOINS**,
+using your provided tables. No advanced SQL concepts (like window functions, CTEs, subqueries, or HAVING) are included.
+
+---
+
+## **Easy (20 Questions)**
+
+1. Select all columns from the `employees` table.
+2. List the first and last names of all employees.
+3. Show the names of all departments.
+4. Find all employees who are female.
+5. Display all employees hired after January 1, 2000.
+6. List all employees whose salary is greater than 50,000.
+7. Show all employees in department 'd005'.
+8. List all employees with the title 'Manager'.
+9. Select all employees whose first name starts with 'A'.
+10. Show all employees born before 1980.
+11. List the salaries of all employees in ascending order.
+12. Display the last names of employees in descending order.
+13. Find the minimum salary in the `salaries` table.
+14. Find the maximum salary in the `salaries` table.
+15. Count the number of employees in the `employees` table.
+16. Count the number of departments.
+17. Count the number of unique titles.
+18. Show the average salary of all employees.
+19. List all employees with salary between 60,000 and 80,000.
+20. Find all employees hired in the year 1999.
+
+---
+
+## **Medium (40 Questions)**
+
+21. List the number of employees in each department.
+22. Show the average salary for each department.
+23. Find the total salary paid in each department.
+24. List the number of employees for each title.
+25. Find the average salary for each title.
+26. Show the maximum salary for each department.
+27. List the departments in order of number of employees, highest first.
+28. Show the titles in order of average salary, lowest first.
+29. List all employees and their department names.
+30. List all employees and their current titles.
+31. Show the total number of male and female employees.
+32. Find the department with the highest total salary.
+33. List employees who work in more than one department.
+34. Show all employees with the highest salary in their department.
+35. List the departments with more than 10 employees.
+36. Show the total salary paid to managers in each department.
+37. List the names of departments that have no employees.
+38. Show the average salary of employees hired after 2010.
+39. List all employees and their manager's employee number.
+40. Find the employee(s) with the lowest salary in each department.
+41. List all employees who are managers.
+42. Show the number of employees hired each year.
+43. Display the average salary for each gender.
+44. List the titles held by employees in the 'd001' department.
+45. Show the department name and number of managers in each department.
+46. List employees whose salary is above the average salary of their department.
+47. Show all employees who have the same first name as their manager.
+48. List the top 5 highest paid employees.
+49. Show the number of employees for each combination of title and gender.
+50. List employees who have worked in more than one department.
+51. Show the department(s) with the lowest average salary.
+52. List the average salary for each department, ordered by department name.
+53. Show the number of employees for each hire year, ordered by year.
+54. List employees whose last name is the same as any manager's last name.
+55. Show the total number of departments each employee has worked in.
+56. List the average salary for each title, ordered by average salary descending.
+57. Show the department with the most managers.
+58. List the titles that are held by more than 50 employees.
+59. Show all employees and their department and title.
+60. List all employees in the 'd002' department with salary above 70,000.
+
+---
+
+## **Hard (40 Questions)**
+
+61. List the top 3 departments by total salary paid.
+62. Show the employee(s) with the highest salary in the company.
+63. List the departments and the number of employees with salary above 80,000.
+64. Show the average salary for each department and title combination.
+65. Find employees who have the same title in more than one department.
+66. List departments with fewer than 5 employees.
+67. Show the employee(s) with the lowest salary in the company.
+68. List the department(s) with no managers.
+69. Show the title with the highest average salary.
+70. List employees who have the same first and last name.
+71. Show the number of employees in each department, ordered by number of employees descending.
+72. List the average salary for each department, only including departments with more than 20 employees.
+73. Show the top 10 employees by salary, including their department and title.
+74. List employees who are not assigned to any department.
+75. Show the number of employees for each department and title combination.
+76. List departments where all employees have salary above 60,000.
+77. Show the average salary for each hire year.
+78. List employees who have the same title as their manager.
+79. Show the department(s) with the highest number of female employees.
+80. List the total salary paid to each manager.
+81. Show the number of employees for each birth year.
+82. List employees who have worked in both 'd001' and 'd002' departments.
+83. Show the average salary for each department, only including employees hired after 2015.
+84. List employees who have the same last name as any other employee.
+85. Show the department(s) with the lowest number of employees.
+86. List the titles that are only held by one employee.
+87. Show the average salary for each department, excluding the highest and lowest salaries.
+88. List employees whose salary is above the average salary for their title.
+89. Show the department(s) with the highest average salary.
+90. List employees who are the only employee in their department.
+91. Show the number of employees for each combination of department and gender.
+92. List all employees whose salary is equal to the maximum salary in their department.
+93. Show the titles that are held by both male and female employees.
+94. List the department(s) with the most employees hired in 2020.
+95. Show the average salary for each department and gender combination.
+96. List employees who have worked in all departments.
+97. Show the number of employees who have the same hire date.
+98. List the average salary for each department, ordered by average salary ascending.
+99. Show the department(s) where the average salary is above 75,000.
+100. List employees who have the same title and salary.
+
+---
+
+**All questions use only SELECT, WHERE, GROUP BY, ORDER BY, aggregation functions, and JOINS as requested.**  
+If you need solutions or explanations for any, let me know!
+
+Citations:
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/31485859/3def5076-e3eb-4151-91de-7c3b1dc6bd14/departments.csv
+[2] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/31485859/baaaefea-1b31-4ec3-8f81-e63644f2a011/titles.csv
+[3] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/31485859/7f5a6bf0-40ff-46fa-841a-543b1afab5c4/dept_manager.csv
+[4] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/31485859/296c8ea9-cbd8-4115-88b6-4af927b53698/dept_emp.csv
+[5] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/31485859/a33fca3d-4716-47e9-aaef-86cb9fca543a/salaries.csv
+[6] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/31485859/d1cbee41-bc78-43e7-85af-a8cf0b567734/employees.csv
+[7] https://www.w3resource.com/sql/joins/joining-with-group-by-and-order-by.php
+[8] https://www.w3schools.com/sql/sql_groupby.asp
+[9] https://www.geeksforgeeks.org/how-to-group-and-aggregate-data-using-sql/
+[10] https://stackoverflow.com/questions/1130062/execution-sequence-of-group-by-having-and-where-clause-in-sql-server
+[11] https://mode.com/sql-tutorial/sql-group-by/
+[12] https://sqlbolt.com/lesson/select_queries_order_of_execution
+[13] https://www.datacamp.com/tutorial/group-by-having-clause-sql
+[14] https://www.simplilearn.com/tutorials/sql-tutorial/group-by-in-sql
+[15] https://stackoverflow.com/questions/15054349/using-group-by-and-order-by-on-an-inner-join-sql-query
+[16] https://www.w3schools.com/sql/sql_Groupby.asp
+[17] https://www.digitalocean.com/community/tutorials/how-to-use-groupby-and-orderby-in-sql
+[18] https://www.w3resource.com/sql-exercises/sql-aggregate-functions.php
+[19] https://www.sisense.com/blog/sql-query-order-of-operations/
+[20] https://www.geeksforgeeks.org/sql-group-by/
+[21] https://www.codechef.com/practice/sql-case-studies-topic-wise
+[22] https://docs.data.world/documentation/sql/concepts/intermediate/GROUP_BY.html
+[23] https://learnsql.com/blog/group-by-and-order-by/
+[24] https://learnsql.com/blog/group-by-exercises/
+[25] https://www.navicat.com/en/company/aboutus/blog/1708-using-group-by-and-order-by-in-the-same-query.html
+[26] https://www.geeksforgeeks.org/sql-exercises/
+
+---
+Answer from Perplexity: pplx.ai/share
