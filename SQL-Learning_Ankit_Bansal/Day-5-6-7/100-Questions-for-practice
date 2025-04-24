@@ -53,6 +53,8 @@ titles t on e.title_id=t.title_id
 where t.title='Manager'
 
 9. Select all employees whose first name starts with 'A'.
+
+
 10. Show all employees born before 1980.
 11. List the salaries of all employees in ascending order.
 12. Display the last names of employees in descending order.
