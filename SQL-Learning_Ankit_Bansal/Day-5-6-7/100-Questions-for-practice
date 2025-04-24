@@ -4,15 +4,32 @@ using your provided tables. No advanced SQL concepts (like window functions, CTE
 
 ---
 
-
 ## **Easy (20 Questions)**
 
 1. Select all columns from the `employees` table.
+
+select * from employees;
+
 2. List the first and last names of all employees.
+
+select first_name,last_name from employees;
+
 3. Show the names of all departments.
+
+select * from departments;
+
 4. Find all employees who are female.
+
+select * from employees where gender='F'
+
 5. Display all employees hired after January 1, 2000.
+
+select * from employees where hire_date > '2000-01-01'
+
 6. List all employees whose salary is greater than 50,000.
+
+select * from employees where salary > 50000
+
 7. Show all employees in department 'd005'.
 8. List all employees with the title 'Manager'.
 9. Select all employees whose first name starts with 'A'.
