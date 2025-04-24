@@ -45,6 +45,13 @@ inner join dept_emp d on e.emp_no = d.emp_no
 where d.dept_no = 'd005'
 
 8. List all employees with the title 'Manager'.
+
+select e.*
+from employees e
+inner join
+titles t on e.title_id=t.title_id
+where t.title='Manager'
+
 9. Select all employees whose first name starts with 'A'.
 10. Show all employees born before 1980.
 11. List the salaries of all employees in ascending order.
