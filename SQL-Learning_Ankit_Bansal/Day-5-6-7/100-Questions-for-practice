@@ -31,6 +31,19 @@ select * from employees where hire_date > '2000-01-01'
 select * from employees where salary > 50000
 
 7. Show all employees in department 'd005'.
+
+select *
+from employees e 
+inner join dept_emp d on e.emp_no=d.emp_no
+where dept_no='d005'
+
+OR
+
+select e.*
+from employees e 
+inner join dept_emp d on e.emp_no = d.emp_no
+where d.dept_no = 'd005'
+
 8. List all employees with the title 'Manager'.
 9. Select all employees whose first name starts with 'A'.
 10. Show all employees born before 1980.
