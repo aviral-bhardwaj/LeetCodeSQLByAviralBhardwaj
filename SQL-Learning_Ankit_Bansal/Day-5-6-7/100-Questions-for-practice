@@ -113,9 +113,64 @@ select * from employees where hire_date like '1999%'
 ## **Medium (40 Questions)**
 
 21. List the number of employees in each department.
+
+SELECT 
+    COUNT(e.emp_no) AS Number_Of_Emp, d.dept_no
+FROM
+    employees e
+        INNER JOIN
+    dept_emp d ON e.emp_no = d.emp_no
+GROUP BY d.dept_no
+  
 22. Show the average salary for each department.
+
+SELECT 
+    AVG(sal.salary) AS Average_Salary,
+    d.dept_no
+FROM
+    salaries sal
+INNER JOIN
+    dept_emp d ON sal.emp_no = d.emp_no
+GROUP BY
+    d.dept_no;
+
+  
 23. Find the total salary paid in each department.
+
+SELECT 
+    SUM(sal.salary) AS Total_Salary, d.dept_no
+FROM
+    salaries sal
+        INNER JOIN
+    dept_emp d ON sal.emp_no = d.emp_no
+GROUP BY d.dept_no
+  
+  
 24. List the number of employees for each title.
+
+SELECT 
+    COUNT(e.emp_no) AS count_of_emp, 
+    t.title_id 
+FROM 
+    employees e 
+INNER JOIN 
+    titles t ON e.title_id = t.title_id 
+GROUP BY 
+    t.title_id;
+
+OR
+
+  SELECT 
+    COUNT(e.emp_no) AS count_of_emp, 
+    t.title_id
+FROM 
+    employees e
+INNER JOIN 
+    titles t ON e.title_id = t.title_id
+GROUP BY 
+    t.title_id;
+
+  
 25. Find the average salary for each title.
 26. Show the maximum salary for each department.
 27. List the departments in order of number of employees, highest first.
