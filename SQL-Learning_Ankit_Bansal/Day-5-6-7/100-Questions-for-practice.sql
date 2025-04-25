@@ -92,6 +92,12 @@ select count(*) from employees
 FROM `titles`;
   
 18. Show the average salary of all employees.
+
+
+SELECT AVG(sal.salary) AS avg_salary
+FROM employees e
+INNER JOIN salaries sal ON e.emp_no = sal.emp_no;
+  
 19. List all employees with salary between 60,000 and 80,000.
 20. Find all employees hired in the year 1999.
 
