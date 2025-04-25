@@ -54,15 +54,43 @@ where t.title='Manager'
 
 9. Select all employees whose first name starts with 'A'.
 
+select * from employees where first_name like 'A%'
 
 10. Show all employees born before 1980.
+
+select * from employees where birth_date < '1980-01-01'
+  
 11. List the salaries of all employees in ascending order.
+
+select e.*, sal.salary from employees e inner join salaries sal on e.emp_no=sal.emp_no order by sal.salary
+  
 12. Display the last names of employees in descending order.
+
+  select last_name from employees order by last_name desc
+
+  
 13. Find the minimum salary in the `salaries` table.
+
+  select min(salary) from salaries
+
+  
 14. Find the maximum salary in the `salaries` table.
+
+  select max(salary) from salaries
+  
 15. Count the number of employees in the `employees` table.
+
+select count(*) from employees 
+  
 16. Count the number of departments.
+
+  select count(*) from departments
+  
 17. Count the number of unique titles.
+
+  SELECT  distinct(title)
+FROM `titles`;
+  
 18. Show the average salary of all employees.
 19. List all employees with salary between 60,000 and 80,000.
 20. Find all employees hired in the year 1999.
