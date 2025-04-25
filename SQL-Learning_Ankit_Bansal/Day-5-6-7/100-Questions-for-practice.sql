@@ -99,8 +99,15 @@ FROM employees e
 INNER JOIN salaries sal ON e.emp_no = sal.emp_no;
   
 19. List all employees with salary between 60,000 and 80,000.
+
+select e.*, sal.salary from employees e inner join salaries sal on e.emp_no=sal.emp_no  where sal.salary between 60000 and 80000
+  
 20. Find all employees hired in the year 1999.
 
+  select * from employees where hire date like '1999%'
+
+select * from employees where hire_date like '1999%'
+  
 ---
 
 ## **Medium (40 Questions)**
