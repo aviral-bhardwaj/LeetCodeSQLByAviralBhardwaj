@@ -199,6 +199,14 @@ GROUP BY d.dept_no
 ORDER BY count_of_emp DESC;
 
 28. Show the titles in order of average salary, lowest first.
+
+SELECT t.title, AVG(s.salary) AS avg_salary
+FROM employees e
+INNER JOIN titles t ON e.title_id = t.title_id
+INNER JOIN salaries s ON e.emp_no = s.emp_no
+GROUP BY t.title
+ORDER BY avg_salary ASC;
+
 29. List all employees and their department names.
 30. List all employees and their current titles.
 31. Show the total number of male and female employees.
