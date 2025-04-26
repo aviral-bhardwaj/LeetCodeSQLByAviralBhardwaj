@@ -219,8 +219,33 @@ FROM
     departments dep ON dep.dept_no = d.dept_no
 
 30. List all employees and their current titles.
+
+SELECT 
+    e.*, t.title
+FROM
+    employees e
+    INNER JOIN titles t ON e.title_id = t.title_id;
+
+
 31. Show the total number of male and female employees.
+
+select gender,count(*) Count_of_Total_Emp from employees group by gender order by gender
+or
+WITH gender_counts AS (
+    SELECT 
+        gender,
+        COUNT(*) AS total_employees
+    FROM 
+        employees
+    GROUP BY 
+        gender
+)
+SELECT * FROM gender_counts;
+
 32. Find the department with the highest total salary.
+
+
+
 33. List employees who work in more than one department.
 34. Show all employees with the highest salary in their department.
 35. List the departments with more than 10 employees.
