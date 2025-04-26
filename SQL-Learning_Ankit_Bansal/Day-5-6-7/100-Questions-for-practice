@@ -190,6 +190,14 @@ JOIN departments d ON de.dept_no = d.dept_no
 GROUP BY d.dept_name;
 
 27. List the departments in order of number of employees, highest first.
+
+
+ SELECT d.dept_no, COUNT(e.emp_no) AS count_of_emp
+FROM dept_emp d
+INNER JOIN employees e ON d.emp_no = e.emp_no
+GROUP BY d.dept_no
+ORDER BY count_of_emp DESC;
+
 28. Show the titles in order of average salary, lowest first.
 29. List all employees and their department names.
 30. List all employees and their current titles.
