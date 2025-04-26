@@ -208,6 +208,16 @@ GROUP BY t.title
 ORDER BY avg_salary ASC;
 
 29. List all employees and their department names.
+
+SELECT 
+    e.*, dep.dept_name
+FROM
+    employees e
+        INNER JOIN
+    dept_emp d ON e.emp_no = d.emp_no
+        INNER JOIN
+    departments dep ON dep.dept_no = d.dept_no
+
 30. List all employees and their current titles.
 31. Show the total number of male and female employees.
 32. Find the department with the highest total salary.
